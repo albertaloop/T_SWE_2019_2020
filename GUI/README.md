@@ -17,6 +17,12 @@ The pod UI is written in PyQt, which allows for easy hierarchical and modular or
 
 ![alt text](screenshots/misc.v1.png "Misc. tab")
 
+## Build Process
+The interface is created using **Qt Creator**, which produces a .ui file. To convert the .ui file into python code, use the following command in the terminal:
+```
+pyuic5 <.ui file> -o <python filename>
+```
+This will translate the .ui file into a .py file, and if you run the python program, it should produce the same design that was worked on within Qt Creator.
 
 ## Information to be added
 As this is still a work in progress, information that is yet to be added to the interface is listed below:
