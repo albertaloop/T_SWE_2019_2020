@@ -38,7 +38,7 @@
     <enum>QTabWidget::Rounded</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="mode_tab">
     <attribute name="title">
@@ -263,7 +263,7 @@
      </row>
      <column>
       <property name="text">
-       <string> </string>
+       <string/>
       </property>
      </column>
      <item row="0" column="0">
@@ -664,11 +664,429 @@
     <attribute name="title">
      <string>Health Test</string>
     </attribute>
+    <widget class="QPushButton" name="healthTestButton">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>0</y>
+       <width>131</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start Health Test</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_status_label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time Elapsed:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="status_label_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0 s</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>50</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>251</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <row>
+      <property name="text">
+       <string>Battery Voltage 1</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Battery Voltage 2</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Battery Temperature 1</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Battery Temperature 2</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Battery Capacity 1</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Battery Capacity 2</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Vessel Pressure</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>25.23 V</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>18.34 V</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>252</red>
+         <green>1</green>
+         <blue>7</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>15.84 ºC</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>26.75 ºC</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>252</red>
+         <green>1</green>
+         <blue>7</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>75%</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>33</red>
+         <green>255</green>
+         <blue>6</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+     <item row="5" column="0">
+      <property name="text">
+       <string>42%</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>253</red>
+         <green>128</green>
+         <blue>8</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+     <item row="6" column="0">
+      <property name="text">
+       <string>117.3 kPa</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>33</red>
+         <green>255</green>
+         <blue>6</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+    </widget>
    </widget>
-   <widget class="QWidget" name="tab_5">
+   <widget class="QWidget" name="navTab">
     <attribute name="title">
-     <string>Tab 5</string>
+     <string>Nav</string>
     </attribute>
+    <widget class="QLabel" name="batteryLabel_7">
+     <property name="geometry">
+      <rect>
+       <x>51</x>
+       <y>11</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Path Estimation:</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="batteryBar_7">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>10</y>
+       <width>95</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>53</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_status_label_5">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>70</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Telemetry Position:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="status_label_5">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>70</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0,200,9)</string>
+     </property>
+     <property name="text">
+      <string>127m</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_status_label_6">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>100</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Telemetry Velocity:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="status_label_6">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>100</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0,200,9)</string>
+     </property>
+     <property name="text">
+      <string>7.9 m/s</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_status_label_7">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>40</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time Elapsed:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="status_label_7">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0,200,9)</string>
+     </property>
+     <property name="text">
+      <string>23 s</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="Line" name="line">
@@ -779,8 +1197,8 @@ background-color: rgb(252, 1, 7);
   <widget class="QTabWidget" name="cameraWidget">
    <property name="geometry">
     <rect>
-     <x>29</x>
-     <y>80</y>
+     <x>30</x>
+     <y>70</y>
      <width>271</width>
      <height>231</height>
     </rect>
@@ -824,6 +1242,70 @@ background-color: rgb(252, 1, 7);
      </property>
     </widget>
    </widget>
+  </widget>
+  <widget class="QLabel" name="current_status_label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SpaceX Telemetry Status:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="status_label_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>350</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,200,9)</string>
+   </property>
+   <property name="text">
+    <string>Ready</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="current_status_label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FSM state:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="status_label_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>380</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,191,255)</string>
+   </property>
+   <property name="text">
+    <string>Launch</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
  </widget>
  <resources/>

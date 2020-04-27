@@ -17,6 +17,15 @@ The pod UI is written in PyQt, which allows for easy hierarchical and modular or
 
 ![alt text](screenshots/misc.v1.png "Misc. tab")
 
+*Health Test* tab:
+
+![alt text](screenshots/healthtest.v1.png "Health test tab")
+
+*Navigation* tab:
+
+![alt text](screenshots/nav.v1.png "Navigation tab")
+
+
 ## Build Process
 The interface is created using **Qt Creator**, which produces a .ui file. To convert the .ui file into python code, use the following command in the terminal:
 ```
@@ -28,6 +37,7 @@ This will translate the .ui file into a .py file, and if you run the python prog
 As this is still a work in progress, information that is yet to be added to the interface is listed below:
 
 * Quality logo/icons to use
+* Font style to use
 * Telemetry values of position/velocity
 * Telemetry values of time + software state
 * FSM state
