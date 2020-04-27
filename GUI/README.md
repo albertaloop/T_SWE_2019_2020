@@ -1,4 +1,6 @@
-# AlbertaLoop GUI [work in progress]
+# AlbertaLoop GUI
+**Note**: This is currently a work-in-progress
+
 The pod UI is written in PyQt, which allows for easy hierarchical and modular organization. This is just a front-end representation of the interface, built using **Qt Creator**. The signals and actions need to be coded by hand moving forward, to allow the button presses to work, and further actions to take place.
 
 ## Screenshots and GIFS
