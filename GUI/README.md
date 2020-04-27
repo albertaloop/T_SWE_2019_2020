@@ -4,7 +4,7 @@
 The pod UI is written in PyQt, which allows for easy hierarchical and modular organization. This is just a front-end representation of the interface, built using **Qt Creator**. The signals and actions need to be coded by hand moving forward, to allow the button presses to work, and further actions to take place.
 
 ## Screenshots and GIFS
-### Checkpoint 1: Basic layout and tabs created
+### **Checkpoint 1**: Basic layout and tabs created
 *Mode* tab:
 
 ![alt text](screenshots/mode.v1.png "Mode tab")
