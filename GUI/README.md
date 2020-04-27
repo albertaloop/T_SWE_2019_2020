@@ -33,7 +33,25 @@ pyuic5 <.ui file> -o <python filename>
 ```
 This will translate the .ui file into a .py file, and if you run the python program, it should produce the same design that was worked on within Qt Creator.
 
-## Information to be added
+**Note**: The translation from the .ui to .py file only generates the class definitions. In order for the interface to "show" when you run the python program, the following needs to be added to the generated file:
+
+Add the following imports (to the **top** of the file):
+```
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow
+```
+
+Add the following code to the **end** of the file:
+```
+app = QApplication(sys.argv)
+window = QMainWindow()
+ui = Ui_MainWindow()
+ui.setupUi(window)
+window.show()
+sys.exit(app.exec_())
+```
+
+## Information Yet to be added
 As this is still a work in progress, information that is yet to be added to the interface is listed below:
 
 * Quality logo/icons to use
