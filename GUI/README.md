@@ -37,5 +37,4 @@ As this is still a work in progress, information that is yet to be added to the 
 A list of useful references and documents that were useful while building the interface:
 
 * [MIT Final Report](http://web.mit.edu/mopg/www/papers/MITHyperloop_FinalReport_2017_public.pdf)
-* 
 
