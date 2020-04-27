@@ -21,6 +21,9 @@ The pod UI is written in PyQt, which allows for easy hierarchical and modular or
 ## Information to be added
 As this is still a work in progress, information that is yet to be added to the interface is listed below:
 
+* Quality logo/icons to use
+* Telemetry values of position/velocity
+* Telemetry values of time + software state
 * FSM state
 * SpaceX Telemetry Status
 * Navigation Panel
@@ -28,4 +31,11 @@ As this is still a work in progress, information that is yet to be added to the 
 * Simulation
 * Health Test
 * Configuration sliders/input
+
+
+## References
+A list of useful references and documents that were useful while building the interface:
+
+* [MIT Final Report](http://web.mit.edu/mopg/www/papers/MITHyperloop_FinalReport_2017_public.pdf)
+* 
 
