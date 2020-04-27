@@ -4,12 +4,15 @@ The pod UI is written in PyQt, which allows for easy hierarchical and modular or
 ## Screenshots and GIFS
 ### Checkpoint 1: Basic layout and tabs created
 *Mode* tab:
+
 ![alt text](screenshots/mode.v1.png "Mode tab")
 
 *Battery* tab:
+
 ![alt text](screenshots/battery.v1.png "Battery tab")
 
 *Misc.* tab:
+
 ![alt text](screenshots/misc.v1.png "Misc. tab")
 
 
