@@ -38,14 +38,9 @@ As this is still a work in progress, information that is yet to be added to the 
 
 * Quality logo/icons to use
 * Font style to use
-* Telemetry values of position/velocity
-* Telemetry values of time + software state
-* FSM state
-* SpaceX Telemetry Status
-* Navigation Panel
 * Pod path visualization
 * Simulation
-* Health Test
+* Health Test (functionality)
 * Configuration sliders/input
 
 
