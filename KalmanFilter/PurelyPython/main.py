@@ -61,4 +61,4 @@ plt.plot([mu[1] + 2*np.sqrt(cov[1,1]) for mu, cov in zip(mus,covs)], 'r--')
 
 
 plt.show()
-plt.ginput(1)
+plt.ginput(1) #edit out if using iPython to run and be able to interact with graph
