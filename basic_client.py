@@ -1,23 +1,15 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 18 19:37:24 2020
-
-@author: austinfedoretz
-"""
-
-
 import socket
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #SOCK_STREAM is TCP
-s.connect(("0.0.0.0", 5005)) # internal machine
+#with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
+#    sock.connect(("127.0.0.1", 5002))
 
-full_msg = "" # empty string for recieved message
-
-while True: # makes it so that if data is large it gets coninually loaded "is a buffer"
-    msg = s.recv(8) #the size of the chuncks of data being sent are 1024    
-    if len(msg) <= 0: # if thier is no more data being sent break the loop
-        break
-    full_msg += msg.decode("utf-8")
+ #   sock.send(b"hi from client")
+  #  print(sock.recvfrom(8192))
     
-print(full_msg)
+# attempt to make a program to send information over UDP
+UDP_IP = "127.0.0.1"
+UDP_PORT = 5005
+message = b"hello world"
+
+sock= socket.socket(socket.AF_INET,socket.SOCK_DGRAM) #SOCK_DGRAM signifies UDP
+sock.sendto(message,(UDP_IP, UDP_PORT))
