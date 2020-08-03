@@ -1,21 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 18 19:36:24 2020
-
-@author: austinfedoretz
-"""
-
-#server tutorial
-
 import socket
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #SOCK_STREAM is TCP
-s.bind(("0.0.0.0", 5005)) # internal machine
-s.listen(5) #has a queue of 5 connections
+UDP_IP = "127.0.0.1";
+UDP_PORT = 5005;
+
+sock= socket.socket(socket.AF_INET,socket.SOCK_DGRAM); #SOCK_DGRAM signifies UDP
+sock.bind((UDP_IP, UDP_PORT));
 
 while True:
-    clientsocket, address = s.accept()
-    print(f"connenction from {address} has been established")
-    clientsocket.send(bytes("Welcome to the server","utf-8"))
-    clientsocket.close()
+       data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
+       print("received message: %s" % data)
+       print(addr)
