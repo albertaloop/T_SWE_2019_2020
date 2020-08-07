@@ -1,3 +1,5 @@
+### Setup
+
 Insert main.cpp into a PlatformIO or Arduino project.
 
 Add the Ethernet2 library with the description "Enables network connection (local and Internet) using W5500 based Ethernet shields...."
@@ -14,6 +16,6 @@ Build and upload the program to the board.
 
 To verify that it's working, run the telemetry_module/telemetry_module_test.py script in another shell to receive the packets being sent from the board.
 
-Notes:
+### Notes:
 
 The default frequency in the mock-pod.py script is 25 Hz, which is a delay of 40 ms. There seems to be an issue when the delay is this low and the packet is being printed, so the delay is set to 400 ms. It works with 40 ms without the packet being printed.
