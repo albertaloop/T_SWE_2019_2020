@@ -2,6 +2,7 @@
 #       This program allows a user to send direct information to specific programs
 # 		Allowing for properites in specific programs to be changed
 #		This is Client 0
+#		Aclient1 is c1 and Aclient2 is c2
 ###############################################################
 
 import socket
