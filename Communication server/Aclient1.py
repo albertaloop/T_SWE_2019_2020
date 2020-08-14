@@ -7,7 +7,7 @@ UDP_PORT = 5005
 s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)  #SOCK_DGRAM signifies UDP
 
 ###############################################################
-#        This sends the server information
+#        This sends the server information, This is client 1
 ###############################################################
 
 clientI = bytes("c1", "utf-8")				# input client
