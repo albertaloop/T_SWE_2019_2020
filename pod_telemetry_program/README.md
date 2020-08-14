@@ -1,3 +1,5 @@
+### Setup
+
 Insert main.cpp into a PlatformIO or Arduino project.
 
 Add the Ethernet2 library with the description "Enables network connection (local and Internet) using W5500 based Ethernet shields...."
