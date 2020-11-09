@@ -11,8 +11,8 @@ states = []
 
 sample_space = 100
 
-def animate(i):
 
+def animate(i):
     # Clear the graph after 40 iterations
     x = next(index)
     counter = x
@@ -25,12 +25,14 @@ def animate(i):
         counter = 0
         plt.cla()
 
-    # Append to "states" and "estimates" with respective values from pandas dataframe, then
-    # call the "plot" function
-    # https://pythonprogramming.net/live-graphs-matplotlib-tutorial/
-    # https: // www.tutorialspoint.com / python_pandas / python_pandas_dataframe.htm
-
     # * To Do *
+
+    '''
+    Append to "states" and "estimates" with respective values from pandas dataframe, then
+    call the "plot" function
+    https://pythonprogramming.net/live-graphs-matplotlib-tutorial/
+    https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm
+    '''
 
     ax.legend(["Actual State", "Estimation"])
     ax.set_xlabel("Time Step")
@@ -40,10 +42,11 @@ def animate(i):
 
 
 if __name__ == "__main__":
-
-    # Read CSV file.
-    
     # * To Do *
+
+    '''
+    Read CSV file.
+    '''
 
     # Plot results
     fig, ax = plt.subplots()
