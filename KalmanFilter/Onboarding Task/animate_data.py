@@ -13,10 +13,13 @@ sample_space = 100
 
 
 def animate(i):
+    
+    global states, estimates, data
+
     # Clear the graph after 40 iterations
     x = next(index)
     counter = x
-    print(counter)
+
     time_step.append(x)
     if counter > 40:
         time_step.pop(0)
@@ -25,7 +28,12 @@ def animate(i):
         counter = 0
         plt.cla()
 
-    # * To Do *
+    if time_step[-1] < sample_space:
+        states.append(data.states[time_step[-1]])
+        estimates.append(data.estimates[time_step[-1]])
+
+    plt.plot(states, "b--")
+    plt.plot(estimates, "r--")
 
     '''
     Append to "states" and "estimates" with respective values from pandas dataframe, then
@@ -44,12 +52,17 @@ def animate(i):
 if __name__ == "__main__":
     # * To Do *
 
+    global data
+
     '''
     Read CSV file.
     '''
+    data = pd.read_csv('data.csv')
 
     # Plot results
     fig, ax = plt.subplots()
-    ani = FuncAnimation(plt.gcf(), animate, sample_space)
+    ani = FuncAnimation(fig, animate, frames=sample_space, interval=100, repeat=False)
+    print("Done.")
+
     plt.tight_layout()
     plt.show()
