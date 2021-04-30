@@ -1,4 +1,7 @@
 # Starter CANBus network
+* On the left : _Arduino Serial Monitor_. Shows CANBus nodes with IDs 0x{100,500} transmitting and receiving on the CANBus network
+* On the right: _pulseview_. D1 is connected to the CANL line. Note the CAN row is garbage (expects CANRX, I set it to CANL)
+
 <img src="https://user-images.githubusercontent.com/11367325/116731921-57614080-a9b8-11eb-9808-dafb58018f95.gif" alt="CANBus gif" width="640"/>
 
 ## Setup
